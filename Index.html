@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!--Se hace para establecer la versión de HTML que se va a utilizar-->
+<html lang="en"><!--El lang indica el lenguaje, en este caso es inglés-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primer ejemplo</title>
+</head>
+<body>
+    <h1>Título principal de la página web h4</h1> <!--La etiqueta h son encabezados y el número indica el tipo de encabezado, en este caso es un encabezado de tipo 1-->
+    <h2>Subtítulo de mi web</h2>
+    <p> <!--Es una etiqueta para poner párrafos-->
+        Definimos <br/> de la página <!--La etiqueta br es para dar un salto de línea-->
+    </p>
+    <p>
+        Segundo texto de <hr/> prueba <!--La etiqueta hr da un salto de línea pero pintando una línea divisoria-->
+    </p>
+    
+    <hr/>
+        <h2>Imágenes en HTML</h2>
+        <img title="Foto chida" src="Imagenes/Firefox_wallpaper.png" alt="Imagen de MacOS" width="900" height="600"/> <!--Esta etiqueta permite poner imágenes en la página web
+                                el atributo alt sirve para poner un exto por si no llega a cargar la imágen-
+                                el atributo tittle es para que al pasar el cursor nos muestre un texto-->
+    
+    <hr/>
+
+    <h3>Tercer encabezado de la página</h3>
+
+    <p>
+        Pedazos de texto para ejemplos
+        <blockquote> <!--Nos permite poner el texto como una cita-->
+                Hola a todos, <em>es un ejemplo de texto</em>  para probar <!--Las etiquetas em  e i me pone un texto en cursiva-->
+                etiquetas <strong>html para modificar el texto</strong>  <!--La etiqueta strong me permite poner un texto en negritas-->
+        </blockquote>
+
+        <ol> <!--Me permite crear una lista odernada-->
+            <li>Manzana</li> <!--Srive para crear los elementos de una lista-->
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandía</li>
+        </ol>
+
+    </p>
+    <!--Hay una etiqueta llamada span que nos permite hacer maquetación con CSS en el texto y puede
+    tener atributos como id o class-->
+    <h3>Listado de frutas</h3>
+    <ol>
+        <li>Naranja</li>
+        <li>Pera</li>
+        <li>Sandía</li>
+    </ol>
+
+    <ul> <!--Sirve para crear una lista desordenada (con puntos en lugar de números)-->
+        <li>Naranja</li>
+            <ul>
+                <li>Manzana roja</li> <!--Se puede crear una lista dentro de otra lista-->
+                <li>Manzana verde</li>
+            </ul>
+        <li>Pera</li>
+        <li>Sandía</li>
+    </ul>
+
+    <h3>Formulario</h3>
+    <form> <!--Esta etiqueta crea un formulario-->
+        <p>
+            <label for="nombre">Nombre</label> <!--Sirve para ponerle nombre al campo-->
+            <input type="text" name="nombre" placeholder="Escribe tu nombre"/> <!--Crea un campo de tipo texto para ingresar información
+                el atributo placeholder sirve para poner un texto que al hacer clic en el campo desaparece-->
+        
+        </p>
+
+        <p>
+            <label for="descripcion"> Descripción</label>
+            <textarea name="descripcion"></textarea>
+        </p>
+
+        <input type="radio" name="genero" value="hombre"> Hombre <br/> <!--De esta forma se crea un radio buton con valores predeterminados-->
+        <input type="radio" name="genero" value="mujer"> Mujer <br/> <!--La etiqueta br hace un salto de línea-->
+        <input type="radio" name="genero" value="indefinido"> Indefinido <br/>
+
+        <input type="submit" value="Enviar formulario"> <!--Sirve para crear un botón y enviar la información-->
+
+        <select name="genero2">
+            <option value="hombre">Hombre</option> <!--Esta etiqueta crea las opciones del select-->
+            <option value="mujer">Mujer</option>
+            <option value="indefinido">Indefinido</option>
+        </select>
+    </form>
+
+    <h3>Tablas</h3>
+    <table border="1"> <!--Etiqueta principal para hacer una tabla, el atributo border pinta el borde de la tabla-->
+        <tr> <!--Se crea una fila en la tabla-->
+            <th> <!--La etiqueta th nos sirve para resaltar la información de la columna-->
+                Nombre
+            </th>
+            <th>Apellidos</th>
+            <th>País</th>
+        </tr>
+
+        <tr>
+            <td>David</td> <!--La etiqueta td sirve para crear una columna-->
+            <td colspan="2">Mendoza</td> <!--El atributo colspan sirve para expandir la columna-->
+            <td>México</td>
+        </tr>
+
+        <tr>
+            <td>Layda</td>
+            <td>Peraza</td>
+            <td>México</td>
+        </tr>
+    </table>
+</body>
+</html>
